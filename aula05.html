@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Aula 05 - JS</title>
+</head>
+<body>
+	<script type="text/javascript">
+		// para interpretar um caracter como caracter mesmo, coloque uma barra invertida na frente
+		var txt = 'Pegou foto na caixa d\'agua foto' 
+
+		// length
+		// conta quantidade de caracteres da variável txt
+		console.log(txt.length);
+		// return - 34
+
+		// indexOf
+		// Encontra em qual caracter a palavra 'foto' começa
+		console.log(txt.indexOf('foto'));
+		// return - 5
+
+		// lastIndexOf
+		// Encontra em qual caractere a palavra 'foto' começa, porem pegando a ultima palavra do texto
+		console.log(txt.lastIndexOf('foto'));
+		// return - 30
+
+		// search
+		// Encontra da mesma forma que o indexOf, porém aceita expressões regulares
+		console.log(txt.search('foto'));
+
+		// slice
+		// funcao para extrair partes de uma string
+		console.log(txt.slice(0, 4));
+		// return - 'Pego'
+		// muito parecido com slice
+		console.log(txt.substring(0, 4));
+		
+		// substr
+		// coloca de onde você quer comecar, e quantos caracteres teremos a seguir.
+		console.log(txt.substring(4, 4));
+
+		// replace
+		// substitui o valor encontrado pelo valor fornecido
+		console.log(txt.replace('Google', 'Rbtech'));
+
+		// toLowerCase / toUpperCase
+		// letra minusculas / maiusculas
+		console.log(txt.toUpperCase());
+
+		var numero = 42.839
+		// toFixed()
+		// fixa a quantidade de algarismos apos a virgula (casas decimais)
+		console.log(numero.toFixed(2));
+		// return - 42.84
+		
+		// toPrecision()
+		// mostra uma determinada quantidade de algarismos definidos
+		console.log(numero.toPrecision(2));
+		// return - 42 
+	</script>
+</body>
+</html>

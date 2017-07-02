@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Aula 04 - JS</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var nome = 'Luiz';
+		var sobrenome = 'Menniti';
+		var idade = 27;
+		// var pessoa = ['Luiz', 'Menniti', 27];
+		// array
+		var frutas = ['laranja', 'abacate', 'melancia'];
+		// objeto pessoa
+		var pessoa = {
+			 nome: 'Luiz'
+			,sobrenome: 'Menniti'
+			,idade: 27
+			,andar: function(){
+				alert('caminhando');
+			}
+		};
+		// irá adicionar o valor pitanga no final do array
+		frutas.push('pitanga');
+		// irá remover o primeiro elemento do array
+		frutas.shift();
+		// irá adicionar um elemento no início do array
+		frutas.unshift();
+		// irá inverter a ordem dos elementos no array
+		frutas.reverse();
+		// irá colocar em ordem alfabetica
+		frutas.sort();
+	</script>
+</body>
+</html>
